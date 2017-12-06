@@ -20,6 +20,7 @@ namespace FromApp
 
         private bool isUpdate;
         private int selectedRowIndex = -1;
+        private int ImageLıstId = 0;
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
@@ -31,9 +32,10 @@ namespace FromApp
 
             var li = new ListViewItem(new[] { "",txtAd.Text, txtSoyad.Text, txtKimlikNo.Text, txtUzmanlik.Text });
 
-            imageList2.Images.Add(pictureBox1.Image);
+            imageList2.Images.Add(ImageLıstId.ToString(), pictureBox1.Image);
 
-            li.ImageIndex = imageList2.Images.Count - 1;
+            li.ImageKey = ImageLıstId.ToString();
+            ImageLıstId++;
 
 
             if (isUpdate)
@@ -263,5 +265,7 @@ namespace FromApp
         {
             ProgresbarHesapla();
         }
+
+        
     }
 }

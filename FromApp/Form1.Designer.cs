@@ -56,6 +56,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pnlCinsiyet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +94,6 @@
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(104, 20);
             this.txtAd.TabIndex = 3;
- 
             this.txtAd.Leave += new System.EventHandler(this.txtAd_Leave);
             // 
             // txtSoyad
@@ -207,7 +207,7 @@
             this.columnHeader4});
             this.listView1.FullRowSelect = true;
             this.listView1.LargeImageList = this.imageList1;
-            this.listView1.Location = new System.Drawing.Point(12, 204);
+            this.listView1.Location = new System.Drawing.Point(12, 291);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(396, 97);
             this.listView1.SmallImageList = this.imageList2;
@@ -279,18 +279,27 @@
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.progressBar1.Location = new System.Drawing.Point(12, 319);
+            this.progressBar1.Location = new System.Drawing.Point(12, 415);
             this.progressBar1.MarqueeAnimationSpeed = 0;
             this.progressBar1.Maximum = 5;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(396, 23);
             this.progressBar1.TabIndex = 18;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(280, 236);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 370);
+            this.ClientSize = new System.Drawing.Size(426, 483);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -346,6 +355,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
