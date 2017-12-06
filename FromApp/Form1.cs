@@ -20,7 +20,12 @@ namespace FromApp
         private bool isUpdate;
 
         private void btnEkle_Click(object sender, EventArgs e)
+
         {
+
+            
+
+
             var kisi = (isUpdate) ? (Kisi)lstKisi.SelectedItem : new Kisi();
 
             kisi.Ad = txtAd.Text;

@@ -38,6 +38,11 @@
             this.lstKisi = new System.Windows.Forms.ListBox();
             this.txtUzmanlik = new System.Windows.Forms.TextBox();
             this.lblUzmanlik = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.Ad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Soyad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Tc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Uzman = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lblAd
@@ -123,11 +128,46 @@
             this.lblUzmanlik.TabIndex = 9;
             this.lblUzmanlik.Text = "Uzmanlık";
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Ad,
+            this.Soyad,
+            this.Tc,
+            this.Uzman});
+            this.listView1.Location = new System.Drawing.Point(27, 212);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(455, 141);
+            this.listView1.TabIndex = 10;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // Ad
+            // 
+            this.Ad.Text = "Adi";
+            this.Ad.Width = 79;
+            // 
+            // Soyad
+            // 
+            this.Soyad.Text = "Soyadi";
+            this.Soyad.Width = 86;
+            // 
+            // Tc
+            // 
+            this.Tc.Text = "Tc Kimlik No";
+            this.Tc.Width = 109;
+            // 
+            // Uzman
+            // 
+            this.Uzman.Text = "Uzmanlık";
+            this.Uzman.Width = 103;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 209);
+            this.ClientSize = new System.Drawing.Size(508, 472);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblUzmanlik);
             this.Controls.Add(this.txtUzmanlik);
             this.Controls.Add(this.lstKisi);
@@ -158,6 +198,11 @@
         private System.Windows.Forms.ListBox lstKisi;
         private System.Windows.Forms.TextBox txtUzmanlik;
         private System.Windows.Forms.Label lblUzmanlik;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader Ad;
+        private System.Windows.Forms.ColumnHeader Soyad;
+        private System.Windows.Forms.ColumnHeader Tc;
+        private System.Windows.Forms.ColumnHeader Uzman;
     }
 }
 
