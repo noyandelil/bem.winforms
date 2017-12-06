@@ -149,21 +149,21 @@
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(121, 48);
             this.contextMenuStrip1.Text = "Menü 1";
             this.contextMenuStrip1.Opened += new System.EventHandler(this.contextMenuStrip1_Opened);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem1.Text = "Sil";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(120, 22);
             this.toolStripMenuItem2.Text = "Güncelle";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -299,7 +299,7 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "*.jpg | *.png";
+            this.openFileDialog1.Filter = "JPEG | *.jpg; *.jpeg | PNG | *.png";
             this.openFileDialog1.InitialDirectory = "c:\\";
             // 
             // pictureBox1
@@ -469,7 +469,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "                                                                                 " +
+    "                                                                       ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.pnlCinsiyet.ResumeLayout(false);
