@@ -77,5 +77,36 @@ Etiam sed accumsan risus, vitae gravida ex. Donec ex risus, mollis quis pulvinar
                 streamWriter.Write(richTextBox1.Text);
             }
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void sarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionColor = Color.Yellow;
+        }
+
+        private void lacivertToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionColor = Color.Navy;
+        }
+
+        private void beyazToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionColor = Color.White;
+        }
+
+        private void siyahToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionColor = Color.Black;
+        }
+
+        private void diğerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            richTextBox1.SelectionColor = colorDialog1.Color;
+        }
     }
 }
