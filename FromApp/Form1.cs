@@ -23,8 +23,13 @@ namespace FromApp
         private bool isUpdate;
         private int selectedRowIndex = -1;
 
+      
+
         private void btnEkle_Click(object sender, EventArgs e)
         {
+           
+
+
             if (progressBar1.Value < 5)
             {
                 MessageBox.Show("Bütün alanları doldurmalısınız.");
@@ -112,6 +117,8 @@ namespace FromApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+          
             //listView1.Items.Add("Ali");
             //listView1.Items[0].SubItems.Add("Aydın");
             //listView1.Items[0].SubItems[0].ForeColor = Color.Red;
@@ -259,6 +266,31 @@ namespace FromApp
                 string key = RandomKey();
                 dictionary.Add(key, key);
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem.ToString() == "LargeIcon")
+            {
+                listView1.View = View.LargeIcon;
+            }
+          else  if (comboBox1.SelectedItem.ToString() == "Details")
+            {
+                listView1.View = View.Details;
+            }
+          else  if (comboBox1.SelectedItem.ToString() == "SmallIcon")
+            {
+                listView1.View = View.SmallIcon;
+            }
+        else    if (comboBox1.SelectedItem.ToString() == "Tile")
+            {
+                listView1.View = View.Tile;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "List")
+            {
+                listView1.View = View.List;
+            }
+
         }
     }
 }

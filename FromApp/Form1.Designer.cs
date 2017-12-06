@@ -213,7 +213,7 @@
             this.listView1.SmallImageList = this.imageList2;
             this.listView1.TabIndex = 15;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.SmallIcon;
+            this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // columnHeader5
@@ -289,10 +289,17 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Largelcon",
+            "Details",
+            "SmallIcon",
+            "List",
+            "Tile"});
             this.comboBox1.Location = new System.Drawing.Point(280, 236);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 19;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
